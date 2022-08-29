@@ -1,14 +1,12 @@
 package gitlabTests;
 
 import io.restassured.RestAssured;
-import io.restassured.matcher.ResponseAwareMatcher;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.Argument;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.json.Json;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -16,6 +14,8 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+
+@Tag("API")
 
 public class ApiTests {
 
@@ -36,7 +36,7 @@ public class ApiTests {
         LinkedHashMap<String, String> links = given().get("/company")
                 .then().log().body()
                 .extract().body().jsonPath().get("links");
-        Assertions.assertEquals("4", links.size());
+        Assertions.assertEquals(4, links.size());
     }
 
     @Test
