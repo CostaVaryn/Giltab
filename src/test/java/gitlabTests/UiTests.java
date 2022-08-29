@@ -2,13 +2,12 @@ package gitlabTests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.Keys;
 
 import static com.codeborne.selenide.Selenide.$x;
+
+@Tag("UI")
 
 public class UiTests {
 
