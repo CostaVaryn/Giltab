@@ -9,11 +9,12 @@ default:
     - shelllocal
 
 stages:
-  - tests
+  - api
+  - ui
   - allure
 
 API test:
-  stage: tests
+  stage: api
   allow_failure: true
   script:
     - ./gradlew -x test apiTests
@@ -26,7 +27,7 @@ API test:
       - build/allure-results
 
 UI test:
-  stage: tests
+  stage: ui
   allow_failure: true
   script:
     - ./gradlew -x test uiTests
