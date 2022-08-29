@@ -9,12 +9,11 @@ default:
     - shelllocal
 
 stages:
-  - api
-  - ui
+  - tests
   - allure
 
 API test:
-  stage: api
+  stage: tests
   allow_failure: true
   script:
     - ./gradlew -x test apiTests
@@ -27,7 +26,7 @@ API test:
       - build/allure-results
 
 UI test:
-  stage: ui
+  stage: tests
   allow_failure: true
   script:
     - ./gradlew -x test uiTests
@@ -40,15 +39,12 @@ Allure report:
   stage: allure
   script:
     - ./gradlew allureReport
-    - echo "Allure report live here - https://${CI_PROJECT_NAMESPACE} .${CI_PAGES_DOMAIN}/-/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/build/reports/allure-report/allureReport/index.html"
+    - echo "Allure report live here - https://${CI_PROJECT_NAMESPACE}.${CI_PAGES_DOMAIN}/-/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/build/reports/allure-report/allureReport/index.html"
   artifacts:
     when: always
     paths:
       - build/reports/allure-report/allureReport/*
 
-#stages:
-#  - test
-#
 #Integration tests with Allure:
 #  stage: test
 #  script:
