@@ -1,7 +1,5 @@
-#for gradle
 image: gradle:alpine
 
-#for maven
 #image: maven:3.8-openjdk-11
 
 default:
@@ -9,51 +7,13 @@ default:
     - shelllocal
 
 stages:
-  - api
-  - ui
-  - allure
+  - test
 
-API test:
-  stage: api
-  allow_failure: true
+Integration tests with Allure:
+  stage: test
   script:
-    - ./gradlew -x test apiTests
+    - .gradlew clean test
+    - .gradlew allureReport
   artifacts:
-    when: always
-    paths:
-      - build/allure-results
-
-UI test:
-  stage: ui
-  allow_failure: true
-  script:
-    - ./gradlew -x test uiTests
-  artifacts:
-    when: always
-    paths:
-      - build/allure-results
-
-Allure report:
-  stage: allure
-  script:
-    - ./gradlew allureReport
-    - echo "Allure report live here - https://${CI_PROJECT_NAMESPACE} .${CI_PAGES_DOMAIN}/-/${CI_PROJECT_NAME}/-/jobs/${CI_JOB_ID}/artifacts/build/reports/allure-report/allureReport/index.html"
-  artifacts:
-    when: always
     paths:
       - build/reports/allure-report/allureReport/*
-
-#stages:
-#  - test
-#
-#Integration tests with Allure:
-#  stage: test
-#  script:
-#    - ./gradlew clean test
-#  after_script:
-#    - ./gradlew allureReport
-#  artifacts:
-#    when: always
-#    paths:
-#      - build/reports/allure-report/allureReport/*
-
