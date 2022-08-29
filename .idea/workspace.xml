@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e7e4f4-a69a-402b-8527-2c115ff18153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gitlabTests/ApiTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gitlabTests/MemberPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gitlabTests/UiTests.java" afterDir="false" />
+    <list default="true" id="20e7e4f4-a69a-402b-8527-2c115ff18153" name="Changes" comment="add .gitlab-ci.yml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gitlabTests/ApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gitlabTests/ApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gitlabTests/UiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gitlabTests/UiTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,13 +75,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cosva/IdeaProjects/Gitlab&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="gitlabTests" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ApiTests.firstMemberHasNoLaunches">
-    <configuration name="ApiTests.checkCeoIsElonMask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Gitlab [allureReport]">
+    <configuration name="ApiTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,7 +103,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;gitlabTests.ApiTests.checkCeoIsElonMask&quot;" />
+            <option value="&quot;gitlabTests.ApiTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,29 +127,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;gitlabTests.ApiTests.checkLinksIsFour&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ApiTests.crewMembersIs30" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;gitlabTests.ApiTests.crewMembersIs30&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,13 +182,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Gitlab [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Gitlab [allureReport]" />
+        <item itemvalue="Gradle.ApiTests.checkLinksIsFour" />
+        <item itemvalue="Gradle.ApiTests" />
         <item itemvalue="Gradle.ApiTests.firstMemberHasNoLaunches" />
         <item itemvalue="Gradle.ApiTests.firstMemberIsRobert" />
-        <item itemvalue="Gradle.ApiTests.checkLinksIsFour" />
-        <item itemvalue="Gradle.ApiTests.crewMembersIs30" />
-        <item itemvalue="Gradle.ApiTests.checkCeoIsElonMask" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +222,112 @@
       <option name="presentableId" value="Default" />
       <updated>1661410969164</updated>
     </task>
+    <task id="LOCAL-00001" summary="add .gitignore">
+      <created>1661498102119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498102119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add build.gradle">
+      <created>1661498116813</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498116813</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add gradle-wrapper.jar">
+      <created>1661498127020</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498127020</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add gradle-wrapper.properties">
+      <created>1661498136530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498136530</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add gradlew">
+      <created>1661498147811</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498147811</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add misc.xml">
+      <created>1661498157602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498157602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add gradle.xml">
+      <created>1661498166387</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498166387</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add vcs.xml">
+      <created>1661498175808</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498175808</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add settings.gradle">
+      <created>1661498183330</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498183330</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add ApiTests.java">
+      <created>1661498196558</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498196558</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add MemberPojo.java">
+      <created>1661498214366</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498214366</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add workspace.xml">
+      <created>1661498222902</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498222902</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add workspace.xml">
+      <created>1661498232460</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661498232460</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add .gitlab-ci.yml">
+      <created>1661501056242</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661501056242</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add .gitlab-ci.yml">
+      <created>1661754667715</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661754667715</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,5 +340,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add .gitignore" />
+    <MESSAGE value="add build.gradle" />
+    <MESSAGE value="add gradle-wrapper.jar" />
+    <MESSAGE value="add gradle-wrapper.properties" />
+    <MESSAGE value="add gradlew" />
+    <MESSAGE value="add misc.xml" />
+    <MESSAGE value="add gradle.xml" />
+    <MESSAGE value="add vcs.xml" />
+    <MESSAGE value="add settings.gradle" />
+    <MESSAGE value="add ApiTests.java" />
+    <MESSAGE value="add MemberPojo.java" />
+    <MESSAGE value="add workspace.xml" />
+    <MESSAGE value="add .gitlab-ci.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .gitlab-ci.yml" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
