@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20e7e4f4-a69a-402b-8527-2c115ff18153" name="Changes" comment="update .gitlab-ci.yml">
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+    <list default="true" id="20e7e4f4-a69a-402b-8527-2c115ff18153" name="Changes" comment="update workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -393,7 +392,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661757399447</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update .gitlab-ci.yml">
+      <created>1661758994767</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1661758994767</updated>
+    </task>
+    <task id="LOCAL-00026" summary="update workspace.xml">
+      <created>1661759010566</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1661759010566</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,9 +435,9 @@
     <MESSAGE value="add build.gradle" />
     <MESSAGE value="add UiTests.java" />
     <MESSAGE value="add workspace.xml" />
-    <MESSAGE value="update workspace.xml" />
     <MESSAGE value="update .gitlab-ci.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .gitlab-ci.yml" />
+    <MESSAGE value="update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
