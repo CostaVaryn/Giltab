@@ -74,7 +74,6 @@ public class ApiTests {
         MemberPojo lastMember = given().get("/crew/" + lastMemberId)
                 .then().log().body()
                 .extract().as(MemberPojo.class);
-
-        Assertions.assertTrue(lastMember.getLaunches().size()==0);
+        Assertions.assertTrue(lastMember.getLaunches().size() == 0);
     }
 }
