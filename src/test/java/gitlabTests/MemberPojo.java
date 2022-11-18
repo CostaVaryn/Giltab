@@ -1,6 +1,5 @@
 package gitlabTests;
 
-
 import java.util.ArrayList;
 
 public class MemberPojo {
